@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-950 text-white">
+<div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
+    <div class="mt-2 p-12 ... sm:mx-auto  border-white border-2 rounded">
+       <div class=" mt-10 time flex flex-row justify-center text-3xl ...">
+         <span class="minute"> 00 </span> :
+         <span class="second"> 00 </span> :
+         <span class="minisecond"> 00 </span>
+       </div>
+       <div class="flex flex-row justify-between mt-10 ">
+        <button class="reset rounded-md bg-blue-600 py-4 px-6 border border-transparent text-center text-xl text-white transition-all shadow-md hover:shadow-lg focus:bg-blue-700 focus:shadow-none active:bg-blue-700 hover:bg-blue-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2" type="button">
+            Reset
+          </button>
+          <button class="stop rounded-md bg-red-600 py-4 px-6 border border-transparent text-center text-xl text-white transition-all shadow-md hover:shadow-lg focus:bg-red-700 focus:shadow-none active:bg-red-700 hover:bg-red-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2" type="button">
+            Stop
+          </button>
+          <button class="start rounded-md bg-green-600 py-4 px-6 border border-transparent text-center text-xl text-white transition-all shadow-md hover:shadow-lg focus:bg-green-700 focus:shadow-none active:bg-green-700 hover:bg-green-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none ml-2" type="button">
+            start
+          </button>
+       </div>
+    </div>
+    <div id="timestamp" class="text-white mt-12 p-12 ... sm:mx-auto">
+      <div class=""></div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
